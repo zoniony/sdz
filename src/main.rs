@@ -1,3 +1,7 @@
+pub mod corpus;
+use corpus::{BytesInput, Inputs};
+
 fn main() {
-    println!("Hello, world!");
+    let input: BytesInput = Inputs::read_file("src/test");
+    println!("{:?}",input);
 }
